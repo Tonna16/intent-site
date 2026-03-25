@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intent Mode Browser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="homepage.html">
+          <div class="brand-mark">IM</div>
+          <div class="brand-copy"><strong>Intent Mode Browser</strong><span>Focus-aware Chrome extension</span></div>
+        </a>
+        <nav class="nav-links" aria-label="Site navigation">
+          <a class="active" href="homepage.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="settings.html">Settings</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="support.html">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="badge">Chrome Extension</div>
+      <h1>Browse with a clear goal, not just another open tab.</h1>
+      <p>Intent Mode Browser helps you start a browsing session with a plain-language goal, score pages against that goal, and reduce distractions while you work. It analyzes the current page in your browser and stores session data locally using Chrome extension storage.</p>
+      <div class="cta-row">
+        <a class="button-link" href="settings.html">See settings</a>
+        <a class="button-link secondary" href="privacy.html">Read privacy policy</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>What the extension currently does</h2>
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="kicker">Intent sessions</div>
+          <p>Users can enter a browsing goal in the popup and launch an intent-focused session for research, reading, or other online work.</p>
+        </div>
+        <div class="info-box">
+          <div class="kicker">Local page analysis</div>
+          <p>The extension classifies the active page as more relevant, a partial match, or a likely distraction based on the user’s current goal.</p>
+        </div>
+        <div class="info-box">
+          <div class="kicker">Session memory</div>
+          <p>It can save useful pages, session notes, drift events, and lightweight visit history to support focus during a browsing session.</p>
+        </div>
+        <div class="info-box">
+          <div class="kicker">On-page interventions</div>
+          <p>Depending on settings, the extension can blur recommended feeds, hide YouTube Shorts, highlight relevant paragraphs, auto-save relevant pages, and show drift banners.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card">
+        <h2>How it works</h2>
+        <ol>
+          <li>Open the extension popup and enter your goal.</li>
+          <li>The extension parses your goal into a topic, keywords, and likely distractors.</li>
+          <li>When you visit pages, the content script evaluates visible page text locally in your browser.</li>
+          <li>The popup shows a focus score, useful pages, notes, and drift moments for the active session.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>Important limitations</h2>
+        <ul>
+          <li>Some Chrome internal pages and other restricted pages cannot be analyzed.</li>
+          <li>The extension needs access to the current tab’s content on supported sites to score pages.</li>
+          <li>The current version stores data locally; it does not advertise cloud sync or account-based features on this site.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Permissions used</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Why it is used</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>activeTab</code></td><td>Lets the extension interact with the current tab after the user opens the extension.</td></tr>
+            <tr><td><code>scripting</code></td><td>Supports running extension logic on web pages the user visits.</td></tr>
+            <tr><td><code>storage</code></td><td>Saves the current intent, settings, notes, useful pages, and other session data locally.</td></tr>
+            <tr><td><code>tabs</code></td><td>Helps the popup read and refresh state for the active tab.</td></tr>
+            <tr><td><code>http://*/*</code> and <code>https://*/*</code></td><td>Allows the extension to analyze supported web pages across normal websites.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">This summary is based on the current manifest and site code you shared.</p>
+    </section>
+
+    <footer class="footer">Intent Mode Browser • Home</footer>
+  </div>
+</body>
+</html>

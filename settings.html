@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intent Mode Browser Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="homepage.html">
+          <div class="brand-mark">IM</div>
+          <div class="brand-copy"><strong>Intent Mode Browser</strong><span>Focus-aware Chrome extension</span></div>
+        </a>
+        <nav class="nav-links" aria-label="Site navigation">
+          <a href="homepage.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="active" href="settings.html">Settings</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="support.html">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="badge">Settings</div>
+      <h1>Settings overview</h1>
+      <p>Intent Mode Browser includes a built-in options page where users can control how aggressively the extension highlights, saves, and suppresses distracting content.</p>
+    </section>
+
+    <section class="card">
+      <h2>Available settings</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Setting</th><th>What it does</th><th>Current default</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hide YouTube Shorts</td><td>Suppresses common Shorts surfaces and links on YouTube pages.</td><td>On</td></tr>
+            <tr><td>Blur recommended feeds</td><td>Blurs common recommendation rails, sidebars, and feed-like containers until intentionally engaged.</td><td>On</td></tr>
+            <tr><td>Highlight relevant paragraphs</td><td>Highlights paragraphs that match saved intent keywords or phrases.</td><td>On</td></tr>
+            <tr><td>Auto-save relevant pages</td><td>Automatically saves highly relevant pages into session memory.</td><td>On</td></tr>
+            <tr><td>Show drift banner</td><td>Shows an on-page reminder when the current page appears to drift away from the user’s goal.</td><td>On</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Scoring thresholds</h2>
+      <p>The options page also lets users adjust the numeric thresholds used to map a page score into labels like <strong>relevant</strong>, <strong>maybe</strong>, and <strong>distraction</strong>.</p>
+      <ul>
+        <li>Relevant threshold default: <strong>24</strong></li>
+        <li>Maybe threshold default: <strong>10</strong></li>
+        <li>Distraction threshold default: <strong>0</strong></li>
+      </ul>
+      <p class="small">These values are taken from the current extension settings defaults in the code you shared.</p>
+    </section>
+
+    <section class="card">
+      <h2>Where users change settings</h2>
+      <p>Users can open the extension’s settings or options page from inside the extension. The extension stores those preferences locally in the browser.</p>
+    </section>
+
+    <footer class="footer">Intent Mode Browser • Settings</footer>
+  </div>
+</body>
+</html>
